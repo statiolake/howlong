@@ -21,10 +21,11 @@ fn main() -> Result<(), Box<dyn Error>> {
         .wait()?;
     let end = time::now();
 
-    eprintln!(
-        ">>> time elapsed: {} ms <<<",
-        (end - start).num_milliseconds()
-    );
+    eprintln!("");
+    eprintln!("==================== PROCESS FINISHED ====================");
+    eprintln!("* time elapsed: {} ms", (end - start).num_milliseconds());
+    eprintln!("==========================================================");
+    eprintln!("");
 
     Ok(())
 }
